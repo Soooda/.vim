@@ -19,3 +19,5 @@ Color theme [dracula](https://draculatheme.com/vim)
 Cursor Highlighter Plugin [vim-illuminate](https://github.com/RRethy/vim-illuminate)
 
 Brackets Highlighter Plugin [rainbow](https://github.com/luochen1990/rainbow)
+
+Start-up Screen Plugin [vim-startify](https://github.com/mhinz/vim-startify)
