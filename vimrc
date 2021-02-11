@@ -174,6 +174,15 @@ noremap <silent>sv :set splitbelow<CR>:split<CR>
 noremap <silent>st :tabnew<CR>
 
 " ===
+" === Plugins Config
+" ===
+" Cursor Highlight
+augroup illuminate_augroup
+	autocmd!
+	autocmd VimEnter * hi illuminatedWord cterm=underline gui=underline
+augroup END
+
+" ===
 " === Pre-launch Commands
 " ===
 packadd! dracula
