@@ -28,6 +28,6 @@ Auto Pair Plugin [auto-pairs](https://github.com/jiangmiao/auto-pairs)
 
 Indent Guide Plugin [indentLine](https://github.com/Yggdroot/indentLine)
 
-Status Bar (My forked version)[eleline.vim](https://github.com/soooda/eleline.vim)
+Status Bar (My forked version) [eleline.vim](https://github.com/soooda/eleline.vim)
 
 combined with [vim-scrollstatus](https://github.com/ojroques/vim-scrollstatus)
