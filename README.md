@@ -25,3 +25,5 @@ Start-up Screen Plugin [vim-startify](https://github.com/mhinz/vim-startify)
 Commenter Plugin [tcomment](https://github.com/tomtom/tcomment_vim)
 
 Auto Pair Plugin [auto-pairs](https://github.com/jiangmiao/auto-pairs)
+
+Indent Guide Plugin [indentLine](https://github.com/Yggdroot/indentLine)

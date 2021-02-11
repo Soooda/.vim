@@ -50,14 +50,14 @@ set cursorline
 syntax enable
 
 " Tab
-set noexpandtab
+set expandtab
 set tabstop=4
 set shiftwidth=4
 set softtabstop=4
 set shiftround
 
 set list
-set listchars=tab:\|\ ,nbsp:⎵,trail:▫
+set listchars=tab:\|\ ,nbsp:⎵,trail:·
 set scrolloff=4
 
 " Prevent auto line split
@@ -178,8 +178,8 @@ noremap <silent>st :tabnew<CR>
 " ===
 " Cursor Highlight
 augroup illuminate_augroup
-	autocmd!
-	autocmd VimEnter * hi illuminatedWord cterm=underline gui=underline
+    autocmd!
+    autocmd VimEnter * hi illuminatedWord cterm=underline gui=underline
 augroup END
 
 " Rainbow
@@ -188,6 +188,12 @@ let g:rainbow_active = 1
 " Comment
 nmap <LEADER>c gcc
 vmap <LEADER>c gc
+
+" indentLine
+"let g:indentLine_setColors = 0
+"let g:indentLine_color_term = 100
+let g:indentLine_char = '┊'
+"let g:indentLine_char_list = ['|', '¦', '┆', '┊']
 
 " ===
 " === Pre-launch Commands
