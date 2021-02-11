@@ -182,6 +182,9 @@ augroup illuminate_augroup
 	autocmd VimEnter * hi illuminatedWord cterm=underline gui=underline
 augroup END
 
+" Rainbow
+let g:rainbow_active = 1
+
 " ===
 " === Pre-launch Commands
 " ===
