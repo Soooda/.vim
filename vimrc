@@ -185,6 +185,10 @@ augroup END
 " Rainbow
 let g:rainbow_active = 1
 
+" Comment
+nmap <LEADER>c gcc
+vmap <LEADER>c gc
+
 " ===
 " === Pre-launch Commands
 " ===
