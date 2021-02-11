@@ -15,4 +15,4 @@ For instance, [A-Shell](https://github.com/holzschu/a-shell) on IOS:
 
 ## Plugins
 Color theme [dracula](https://draculatheme.com/vim)
-
+Color Highlighter Plugin [vim-illuminate](https://github.com/RRethy/vim-illuminate)
