@@ -14,7 +14,7 @@ For instance, [A-Shell](https://github.com/holzschu/a-shell) on IOS:
 ![Example](example.gif)
 
 ## Plugins
-Color theme [dracula](https://draculatheme.com/vim)
+Color theme [catppuccin😽](https://github.com/catppuccin/vim)
 
 Cursor Highlighter Plugin [vim-illuminate](https://github.com/RRethy/vim-illuminate)
 

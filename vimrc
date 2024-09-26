@@ -169,7 +169,6 @@ let g:indentLine_char = '┊'
 " === Pre-launch Commands
 " ===
 set termguicolors
-packadd! dracula
-colorscheme dracula
+colorscheme catppuccin_macchiato
 
 exec "nohlsearch"
