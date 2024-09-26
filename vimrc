@@ -1,4 +1,3 @@
-
 "  __  __        __     _____ __  __ ____   ____
 " |  \/  |_   _  \ \   / /_ _|  \/  |  _ \ / ___|
 " | |\/| | | | |  \ \ / / | || |\/| | |_) | |
@@ -11,43 +10,35 @@
 " ===
 " === Basic
 " ===
-set exrc
-set secure
-set nocompatible
 filetype on
-filetype indent on
-filetype plugin on
-filetype plugin indent on
-set autoindent
+syntax on
+set autoindent autoread background=dark
+set backspace=indent,eol,start belloff=all
+set display=lastline encoding=utf-8 hidden
+set history=10000 incsearch
+set nojoinspaces laststatus=2 ruler
+set showcmd smarttab nostartofline
+set switchbuf=uselast wildmenu "wildoptions=pum,tagfile
+
 set smartindent
-set encoding=utf-8
+set breakindent
 set visualbell
 set noshowmode
-set hidden
-set lazyredraw
-set updatetime=100
-" Omit the hit <Enter> message
-set shortmess+=c
+set updatetime=250
 
-set notimeout
-set ttimeoutlen=0
-
-set viewoptions=cursor,folds,slash,unix
 
 " Enable Cursor
 set mouse=a
 
 " Use the system clipboard
-set clipboard=unnamedplus
-
-" Prevent incorrect background rendering
-let &t_ut=''
+set clipboard="unnamedplus"
 
 set number
 "set relativenumber
 set ruler
 set cursorline
-syntax enable
+
+set completeopt=menuone,noinsert,noselect,preview
 
 " Tab
 set expandtab
@@ -56,40 +47,18 @@ set shiftwidth=4
 set softtabstop=4
 set shiftround
 
+" Sets how vim will display certain whitespace characters in the editor.
 set list
-set listchars=tab:\|\ ,nbsp:⎵,trail:·
-set scrolloff=4
+set listchars=tab:»\ ,trail:·,nbsp:␣
+set scrolloff=5
 
 " Prevent auto line split
 set wrap
-set tw=0
-
-set indentexpr=
-
-" Better backspace
-set backspace=indent,eol,start
-
-" Fold
-set foldmethod=indent
-set foldlevel=99
-set foldenable
-
-" Paste Format Option
-set formatoptions-=tc
-
-" Complete Option
-set completeopt=longest,noinsert,menuone,noselect,preview
 
 " Window split
 set splitright
 set splitbelow
 
-" Status/Command bar
-set laststatus=2 "To always display statusline
-set autochdir
-set showcmd
-" Command autocomplete
-set wildmenu
 
 " Search
 set hlsearch
@@ -104,7 +73,8 @@ au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g
 " === Keys Mapping
 " ===
 " Set <LEADER> as <SPACE>
-let mapleader=" "
+let mapleader=' '
+let maplocalleader=' '
 
 map ; :
 map S :w<CR>
@@ -198,6 +168,7 @@ let g:indentLine_char = '┊'
 " ===
 " === Pre-launch Commands
 " ===
+set termguicolors
 packadd! dracula
 colorscheme dracula
 
